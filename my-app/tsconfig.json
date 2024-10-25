@@ -21,6 +21,17 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/meals/meals-grid.jsx",
+    "src/components/meals/meals-grid.jsx",
+    "src/components/main-header/main-header.tsx",
+    "src/app/meals/page.jsx",
+    "src/components/main-header/main-header.tsx",
+    "src/components/images/image-slideshow.tsx"
+  ],
   "exclude": ["node_modules"]
 }

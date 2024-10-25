@@ -2,25 +2,26 @@ import Link from "next/link";
 import logoImg from "@/assets/logo.png";
 import { ModeToggle } from "./dark-light-toggle";
 import Image from "next/image";
-import MainHeaderBackground from "./main-header-background";
+
+import NavLink from "./nav-link";
 export default function MainHeader() {
   return (
     <>
-      <header className="w-full flex justify-around p-2  ">
+      <header className="w-full flex justify-around p-14  ">
         <Link href="/" className="flex gap-2">
-          <Image src={logoImg} alt="logo" className="w-20 h-16" priority />
-          <h1 className="text-xl font-bold font-mono pt-5 text-orange-600">
+          <Image src={logoImg} alt="logo" className="w-24 h-20 " priority />
+          <h1 className="text-2xl font-bold font-mono pt-5 text-orange-699 dark:text-orange-600 ">
             Next Level Food
           </h1>
         </Link>
         <nav className="flex gap-20 ">
           <div>
-            <ul className="flex gap-5 text-sm pt-5 font-medium">
+            <ul className="flex gap-5 text-md pt-5 font-medium">
               <li>
-                <Link href="/meals">Browse meals</Link>
+                <NavLink href={"/meals"}>Browse meals</NavLink>
               </li>
               <li>
-                <Link href="/community">Foodies Community</Link>
+                <NavLink href={"/community"}>Foodies Community</NavLink>
               </li>
             </ul>
           </div>
