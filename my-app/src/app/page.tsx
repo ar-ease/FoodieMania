@@ -7,7 +7,7 @@ import ImageSlideshow from "@/components/images/image-slideshow";
 export default function Home() {
   return (
     <>
-      <div className="pt-2">
+      <div className="pt-20 ">
         <header className={classes.header}>
           <div className={classes.slideshow}>
             <ImageSlideshow />

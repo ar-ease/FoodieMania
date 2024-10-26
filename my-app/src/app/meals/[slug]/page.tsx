@@ -18,6 +18,18 @@ interface Meal {
   creator_email: string;
 }
 
+export async function generateMetadata({ params }: DynamicMealsProp) {
+  const meal: Meal = (await getMeal((await params).slug)) as Meal;
+  if (!meal) {
+    notFound();
+  }
+
+  return {
+    title: meal.title,
+    description: meal.summary,
+  };
+}
+
 export default async function DynamicMeals(props: DynamicMealsProp) {
   const params = await props.params;
   const meal: Meal = getMeal(params.slug) as Meal;
