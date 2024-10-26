@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -18,20 +22,26 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/meals/meals-grid.jsx",
-    "src/components/meals/meals-grid.jsx",
+    "src/components/meals/meals-grid.tsx",
+    "src/components/meals/meals-grid.tsx",
     "src/components/main-header/main-header.tsx",
-    "src/app/meals/page.jsx",
+    "src/app/meals/page.tsx",
     "src/components/main-header/main-header.tsx",
-    "src/components/images/image-slideshow.tsx"
+    "src/components/images/image-slideshow.tsx",
+    "src/lib/meals.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

@@ -9,8 +9,8 @@ export default function MainHeader() {
     <>
       <header className="w-full flex justify-around p-14  ">
         <Link href="/" className="flex gap-2">
-          <Image src={logoImg} alt="logo" className="w-24 h-20 " priority />
-          <h1 className="text-2xl font-bold font-mono pt-5 text-orange-699 dark:text-orange-600 ">
+          <Image src={logoImg} alt="logo" className="w-24 h-20 mt-6" priority />
+          <h1 className="text-2xl font-bold font-mono text-orange-699 dark:text-orange-600 ">
             Next Level Food
           </h1>
         </Link>

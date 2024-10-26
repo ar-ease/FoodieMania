@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, type JSX } from "react";
 import Image, { StaticImageData } from "next/image"; // Added StaticImageData import
 
 import burgerImg from "@/assets/burger.jpg";
