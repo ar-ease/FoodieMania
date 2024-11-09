@@ -8,7 +8,7 @@ const isInvalidText = (text: string) => {
   return !text || text.trim() == "";
 };
 
-export async function shareMeal(prevState: FormData, formData: FormData) {
+export async function shareMeal(_prevState: unknown, formData: FormData) {
   "use server";
 
   const meal = {
